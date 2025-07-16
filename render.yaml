@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: n8n
+    env: docker
+    region: oregon
+    plan: free
+    autoDeploy: true
+    disk:
+      name: n8n-data
+      mountPath: /home/node/.n8n
+      sizeGB: 1
