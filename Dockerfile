@@ -16,4 +16,4 @@ ENV TZ=Etc/UTC
 WORKDIR /home/node
 
 # Start n8n
-CMD ["n8n"]
+CMD ["sh", "-c", "n8n start --port=$PORT --host=0.0.0.0"]
